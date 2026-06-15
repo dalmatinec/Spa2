@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>ALL IN — Премиальный сервис</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="animated-bg">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+  </div>
+
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo" data-lang="logo">ALL IN</div>
+      
+      <div class="lang-switch">
+        <button class="lang-btn" data-lang-code="ru">RU</button>
+        <button class="lang-btn" data-lang-code="en">EN</button>
+        <button class="lang-btn" data-lang-code="kz">KZ</button>
+      </div>
+
+      <button class="burger" id="burgerBtn">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 12H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M3 6H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M3 18H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu">
+    <div class="menu-header">
+      <div class="logo">ALL IN</div>
+      <button class="close-menu" id="closeMenuBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+    <ul class="menu-list">
+      <li><a href="#hero" data-lang="nav_home"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 9L12 3L21 9V20H3V9Z" stroke="currentColor" stroke-width="1.2" fill="none"/><path d="M9 20V12H15V20" stroke="currentColor" stroke-width="1.2" fill="none"/></svg> Главная</a></li>
+      <li><a href="#programs" data-lang="nav_programs"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="7" height="7" stroke="currentColor" stroke-width="1.2"/><rect x="13" y="4" width="7" height="7" stroke="currentColor" stroke-width="1.2"/><rect x="4" y="13" width="7" height="7" stroke="currentColor" stroke-width="1.2"/><rect x="13" y="13" width="7" height="7" stroke="currentColor" stroke-width="1.2"/></svg> Программы</a></li>
+      <li><a href="#advantages" data-lang="nav_advantages"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L15 8.5L22 9.5L17 14L18.5 21L12 17.5L5.5 21L7 14L2 9.5L9 8.5L12 2Z" stroke="currentColor" stroke-width="1.2" fill="none"/></svg> Преимущества</a></li>
+      <li><a href="#vip" data-lang="nav_vip"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 4L15 9L21 10L16.5 15L18 21L12 17.5L6 21L7.5 15L3 10L9 9L12 4Z" stroke="currentColor" stroke-width="1.2" fill="none"/></svg> VIP</a></li>
+      <li><a href="#faq" data-lang="nav_faq"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.2"/><path d="M12 8V12M12 16H12.01" stroke="currentColor" stroke-width="1.5"/></svg> FAQ</a></li>
+      <li><a href="#contacts" data-lang="nav_contacts"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="1.2"/><path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="1.2"/></svg> Контакты</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <h1 class="hero-title" data-lang="hero_title">ALL IN</h1>
+        <p class="hero-subtitle" data-lang="hero_subtitle">Комфортный отдых в современном формате</p>
+        <div class="hero-description" data-lang="hero_desc">Пространство, где забота о вас достигает абсолютного уровня. Эстетика, приватность и безупречный сервис 24/7.</div>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" data-lang="hero_btn_program">Выбрать программу</button>
+          <button class="btn btn-outline" data-lang="hero_btn_contact">Связаться</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat-card"><div class="stat-number">24/7</div><div class="stat-label" data-lang="stat_schedule">Удобный график</div></div>
+        <div class="stat-card"><div class="stat-number">VIP</div><div class="stat-label" data-lang="stat_vip">Персональный подход</div></div>
+        <div class="stat-card"><div class="stat-number">PRIVATE</div><div class="stat-label" data-lang="stat_private">Конфиденциальность</div></div>
+        <div class="stat-card"><div class="stat-number">PREMIUM</div><div class="stat-label" data-lang="stat_premium">Высокий уровень сервиса</div></div>
+      </div>
+    </section>
+
+    <section id="programs" class="programs">
+      <div class="container">
+        <h2 class="section-title" data-lang="programs_title">Программы отдыха</h2>
+        <div class="programs-grid">
+          <div class="card"><h3>Classic Relax</h3><p>Классическая программа восстановления. Мягкий уход, полное расслабление и атмосфера покоя.</p></div>
+          <div class="card"><h3>Premium Relax</h3><p>Расширенный формат: ароматерапия, углублённая работа с телом и премиальные текстуры.</p></div>
+          <div class="card"><h3>Executive</h3><p>Для тех, кто ценит время. Интенсивный сеанс с максимальным результатом за 60 минут.</p></div>
+          <div class="card"><h3>Night Service</h3><p>Велнес после полуночи. Приглушённый свет, тишина и особая эстетика ночного города.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="formats">
+      <div class="container">
+        <h2 class="section-title" data-lang="formats_title">Форматы обслуживания</h2>
+        <div class="formats-grid">
+          <div class="card"><h3>В салоне</h3><p>Интерьер с мягким свечением и акустическим комфортом. Полная приватность.</p></div>
+          <div class="card"><h3>Выезд</h3><p>Ваш отель или резиденция. Всё оборудование приезжает к вам.</p></div>
+          <div class="card"><h3>Для гостей города</h3><p>Встреча в лобби, экспресс-консультация и адаптированный сеанс под ваш график.</p></div>
+          <div class="card"><h3>Индивидуальный формат</h3><p>Персональный дизайн программы, любой тайминг и особые условия.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="advantages" class="advantages">
+      <div class="container">
+        <h2 class="section-title" data-lang="advantages_title">Преимущества</h2>
+        <div class="advantages-grid">
+          <div class="adv-card"><div class="adv-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M12 2L15 8.5L22 9.5L17 14L18.5 21L12 17.5L5.5 21L7 14L2 9.5L9 8.5L12 2Z" stroke="#2DD4A3" stroke-width="1.2"/></svg></div><h3>Эксклюзивный сервис</h3><p>Каждый гость получает персонального куратора, который сопровождает на всех этапах.</p></div>
+          <div class="adv-card"><div class="adv-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M12 8V12L15 15" stroke="#2DD4A3" stroke-width="1.2"/><circle cx="12" cy="12" r="9" stroke="#2DD4A3" stroke-width="1.2"/></svg></div><h3>Стильная атмосфера</h3><p>Дизайн без лишних деталей. Только естественные материалы и приглушённый изумрудный свет.</p></div>
+          <div class="adv-card"><div class="adv-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M22 12H18L15 21L9 3L6 12H2" stroke="#2DD4A3" stroke-width="1.2"/></svg></div><h3>Технологии релакса</h3><p>Звукотерапия, умное освещение и инновационные методики восстановления.</p></div>
+          <div class="adv-card"><div class="adv-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M20 12V8H4V12M20 12L12 17L4 12M20 12V16H4V12" stroke="#2DD4A3" stroke-width="1.2"/></svg></div><h3>Закрытый клуб</h3><p>Доступ только по предварительной регистрации. Минимальный поток гостей.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vip" class="vip">
+      <div class="container">
+        <div class="vip-card">
+          <div class="vip-glow"></div>
+          <h2 data-lang="vip_title">VIP MEMBERSHIP</h2>
+          <p data-lang="vip_desc">Закрытый клуб с приоритетным доступом, отдельным залом и персональным ассистентом. Только для избранных.</p>
+          <button class="btn btn-primary" data-lang="vip_btn">Получить приглашение</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <div class="container">
+        <h2 class="section-title" data-lang="faq_title">Часто задаваемые вопросы</h2>
+        <div class="accordion" id="accordion">
+          <div class="accordion-item"><div class="accordion-header">Как записаться?</div><div class="accordion-content">Оставьте заявку на сайте или напишите в Telegram/WhatsApp. Администратор свяжется в течение 15 минут.</div></div>
+          <div class="accordion-item"><div class="accordion-header">Есть ли возрастные ограничения?</div><div class="accordion-content">Строго 21+. Услуги предоставляются только совершеннолетним гостям.</div></div>
+          <div class="accordion-item"><div class="accordion-header">Возможен ли выезд в отель?</div><div class="accordion-content">Да, выезд работает 24/7 в пределах города. Для удаленных зон — предварительное согласование.</div></div>
+          <div class="accordion-item"><div class="accordion-header">Какие способы оплаты?</div><div class="accordion-content">Наличные, карты, криптовалюта. Полная конфиденциальность.</div></div>
+          <div class="accordion-item"><div class="accordion-header">Отменяются ли брони?</div><div class="accordion-content">Бесплатная отмена за 2 часа. Позже — удержание 30% от сеанса.</div></div>
+          <div class="accordion-item"><div class="accordion-header">Есть ли дресс-код?</div><div class="accordion-content">Мы ценим эстетику. Рекомендуем комфортную премиальную одежду или предоставляем наши халаты.</div></div>
+          <div class="accordion-item"><div class="accordion-header">VIP зал — что внутри?</div><div class="accordion-content">Отдельный вход,私人 бар, джакузи и расширенная программа на 2+ часа.</div></div>
+          <div class="accordion-item"><div class="accordion-header">Работаете ли вы ночью?</div><div class="accordion-content">Да, 24/7. Ночной формат особенно популярен: тишина и особое освещение.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+      <div class="container">
+        <div class="contacts-card">
+          <h2 data-lang="contacts_title">Контакты</h2>
+          <div class="contacts-row"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M22 16.92V19C22.001 19.7925 21.7667 20.5685 21.3326 21.2251C20.8985 21.8818 20.2872 22.3845 19.578 22.6631C18.8688 22.9417 18.0965 22.9829 17.3662 22.7816C16.6359 22.5803 15.9858 22.1467 15.51 21.55C13.6156 19.288 12.2306 16.6195 11.47 13.75C11.2108 12.7144 11.1555 11.6335 11.3076 10.5759C11.4597 9.51829 11.8155 8.50951 12.35 7.61C12.6974 7.05965 13.1947 6.62452 13.7819 6.35752C14.3691 6.09053 15.0223 6.00322 15.6567 6.1059C16.291 6.20859 16.8798 6.49716 17.3529 6.93587C17.8261 7.37458 18.1638 7.94381 18.32 8.58L19 11.5C19.1108 11.9614 19.0956 12.4432 18.956 12.8967C18.8163 13.3501 18.5574 13.7572 18.21 14.07L16.59 15.41C16.3854 15.5811 16.2238 15.7987 16.118 16.0438C16.0123 16.2889 15.9655 16.555 15.9811 16.8206C15.9968 17.0863 16.0744 17.3444 16.2075 17.5747C16.3405 17.805 16.5255 18.0011 16.747 18.147C17.555 18.703 18.466 19.076 19.43 19.24C19.8577 19.3108 20.2958 19.2893 20.7145 19.1769C21.1332 19.0644 21.5229 18.8636 21.855 18.589L22 16.92Z" stroke="currentColor" fill="none"/><path d="M14 2L18 6M14 6L18 2" stroke="currentColor"/></svg><span data-lang="contacts_tg">@all_in_premium</span></div>
+          <div class="contacts-row"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M22 16.92V19C22.001 19.7925 21.7667 20.5685 21.3326 21.2251C20.8985 21.8818 20.2872 22.3845 19.578 22.6631C18.8688 22.9417 18.0965 22.9829 17.3662 22.7816C16.6359 22.5803 15.9858 22.1467 15.51 21.55C13.6156 19.288 12.2306 16.6195 11.47 13.75C11.2108 12.7144 11.1555 11.6335 11.3076 10.5759C11.4597 9.51829 11.8155 8.50951 12.35 7.61C12.6974 7.05965 13.1947 6.62452 13.7819 6.35752C14.3691 6.09053 15.0223 6.00322 15.6567 6.1059C16.291 6.20859 16.8798 6.49716 17.3529 6.93587C17.8261 7.37458 18.1638 7.94381 18.32 8.58L19 11.5C19.1108 11.9614 19.0956 12.4432 18.956 12.8967C18.8163 13.3501 18.5574 13.7572 18.21 14.07L16.59 15.41C16.3854 15.5811 16.2238 15.7987 16.118 16.0438C16.0123 16.2889 15.9655 16.555 15.9811 16.8206C15.9968 17.0863 16.0744 17.3444 16.2075 17.5747C16.3405 17.805 16.5255 18.0011 16.747 18.147C17.555 18.703 18.466 19.076 19.43 19.24C19.8577 19.3108 20.2958 19.2893 20.7145 19.1769C21.1332 19.0644 21.5229 18.8636 21.855 18.589L22 16.92Z" stroke="currentColor" fill="none"/><rect x="2" y="2" width="8" height="8" rx="1" stroke="currentColor"/></svg><span data-lang="contacts_wa">+7 777 000 11 22</span></div>
+          <div class="contacts-row"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor"/><path d="M12 8V12L14 14" stroke="currentColor"/></svg><span data-lang="contacts_hours">Ежедневно, круглосуточно</span></div>
+          <button class="btn btn-primary" data-lang="contacts_btn">Связаться сейчас</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">ALL IN</div>
+      <div class="footer-nav">
+        <a href="#hero" data-lang="footer_home">Главная</a>
+        <a href="#programs" data-lang="footer_programs">Программы</a>
+        <a href="#vip" data-lang="footer_vip">VIP</a>
+        <a href="#contacts" data-lang="footer_contacts">Контакты</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Telegram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 16.92V19C22.001 19.7925 21.7667 20.5685 21.3326 21.2251C20.8985 21.8818 20.2872 22.3845 19.578 22.6631C18.8688 22.9417 18.0965 22.9829 17.3662 22.7816C16.6359 22.5803 15.9858 22.1467 15.51 21.55C13.6156 19.288 12.2306 16.6195 11.47 13.75C11.2108 12.7144 11.1555 11.6335 11.3076 10.5759C11.4597 9.51829 11.8155 8.50951 12.35 7.61C12.6974 7.05965 13.1947 6.62452 13.7819 6.35752C14.3691 6.09053 15.0223 6.00322 15.6567 6.1059C16.291 6.20859 16.8798 6.49716 17.3529 6.93587C17.8261 7.37458 18.1638 7.94381 18.32 8.58L19 11.5C19.1108 11.9614 19.0956 12.4432 18.956 12.8967C18.8163 13.3501 18.5574 13.7572 18.21 14.07L16.59 15.41C16.3854 15.5811 16.2238 15.7987 16.118 16.0438C16.0123 16.2889 15.9655 16.555 15.9811 16.8206C15.9968 17.0863 16.0744 17.3444 16.2075 17.5747C16.3405 17.805 16.5255 18.0011 16.747 18.147C17.555 18.703 18.466 19.076 19.43 19.24C19.8577 19.3108 20.2958 19.2893 20.7145 19.1769C21.1332 19.0644 21.5229 18.8636 21.855 18.589L22 16.92Z" stroke="currentColor" fill="none"/><path d="M14 2L18 6M14 6L18 2" stroke="currentColor"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 16.92V19C22.001 19.7925 21.7667 20.5685 21.3326 21.2251C20.8985 21.8818 20.2872 22.3845 19.578 22.6631C18.8688 22.9417 18.0965 22.9829 17.3662 22.7816C16.6359 22.5803 15.9858 22.1467 15.51 21.55C13.6156 19.288 12.2306 16.6195 11.47 13.75C11.2108 12.7144 11.1555 11.6335 11.3076 10.5759C11.4597 9.51829 11.8155 8.50951 12.35 7.61C12.6974 7.05965 13.1947 6.62452 13.7819 6.35752C14.3691 6.09053 15.0223 6.00322 15.6567 6.1059C16.291 6.20859 16.8798 6.49716 17.3529 6.93587C17.8261 7.37458 18.1638 7.94381 18.32 8.58L19 11.5C19.1108 11.9614 19.0956 12.4432 18.956 12.8967C18.8163 13.3501 18.5574 13.7572 18.21 14.07L16.59 15.41C16.3854 15.5811 16.2238 15.7987 16.118 16.0438C16.0123 16.2889 15.9655 16.555 15.9811 16.8206C15.9968 17.0863 16.0744 17.3444 16.2075 17.5747C16.3405 17.805 16.5255 18.0011 16.747 18.147C17.555 18.703 18.466 19.076 19.43 19.24C19.8577 19.3108 20.2958 19.2893 20.7145 19.1769C21.1332 19.0644 21.5229 18.8636 21.855 18.589L22 16.92Z" stroke="currentColor" fill="none"/><rect x="2" y="2" width="8" height="8" rx="1" stroke="currentColor"/></svg></a>
+      </div>
+      <div class="copyright" data-lang="copyright">© 2025 ALL IN — Премиум сервис</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
